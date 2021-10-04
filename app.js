@@ -26,7 +26,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 app.get('', (req, res) => {
-  res.render('servicespage', { layout:'../partials/servicespage'})
+  res.render('services', { layout:'../partials/services'})
 })
 
 // catch 404 and forward to error handler

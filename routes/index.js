@@ -9,8 +9,8 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET home page. */
-router.get('/main', function(req, res, next) {
-  res.render('main', { title: 'main' });
+router.get('/home', function(req, res, next) {
+  res.render('index', { title: 'main' });
 });
 
 /* GET About Me page. */

@@ -8,7 +8,7 @@ let  logger = require('morgan');
 //import routes
 let  indexRouter = require('./routes/index');
 let  usersRouter = require('./routes/users');
-let  servicesRouter = require('./routes/')
+
 let mainRouter = require('/routes/main')
 
 let  app = express();
@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
 
 //set routes
-//app.use('/', indexRouter);
+app.use('/', indexRouter);
 app.use('/', mainRouter);
 app.use('/users', usersRouter);
 

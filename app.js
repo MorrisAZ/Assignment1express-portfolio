@@ -5,9 +5,11 @@ let  path = require('path');
 let  cookieParser = require('cookie-parser');
 let  logger = require('morgan');
 
+//import routes
 let  indexRouter = require('./routes/index');
 let  usersRouter = require('./routes/users');
 let  servicesRouter = require('./routes/')
+let mainRouter = require('/routes/main')
 
 let  app = express();
 
@@ -22,8 +24,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
 
-
-app.use('/', indexRouter);
+//set routes
+//app.use('/', indexRouter);
+app.use('/', mainRouter);
 app.use('/users', usersRouter);
 
 

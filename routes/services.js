@@ -7,7 +7,7 @@ var router = express.Router();
 
 /* GET Services page. */
 router.get('/services', function(req, res, next) {
-  res.render('services', { title: 'services' });
+  res.render('services', { title: 'Services' });
 });
 
 

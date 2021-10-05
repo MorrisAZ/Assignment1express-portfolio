@@ -1,6 +1,7 @@
 /*my custom css goes here*/
 body {
 	background-color: #CCFFFF;
+	background-image: var(--bs-gradient);
 }
 td {
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;

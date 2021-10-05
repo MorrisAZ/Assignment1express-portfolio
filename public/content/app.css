@@ -12,6 +12,7 @@ img {
 	border: thick outset #CCFF99;
 	border-radius: 20px;
 	position: static;
+	background:url(../Assets/images/jumbotronbg.jpg) no-repeat;
 }
 #jumbotron div{
 	background:url(../Assets/images/jumbotronbg.jpg) no-repeat;

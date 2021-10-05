@@ -1,6 +1,6 @@
 /*my custom css goes here*/
 body {
-	background-color: #CCFFFF;
+	
 	background-image: var(--bs-gradient);
 }
 td {

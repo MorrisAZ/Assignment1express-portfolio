@@ -1,3 +1,5 @@
+
+
 //installed 3rd party packages
 let  createError = require('http-errors');
 let  express = require('express');
@@ -9,6 +11,8 @@ let  logger = require('morgan');
 let  indexRouter = require('./routes/index');
 let  usersRouter = require('./routes/users');
 
+
+//import routes created for 4 pages
 let aboutRouter = require('./routes/about')
 let servicesRouter = require('./routes/services')
 let contactRouter = require('./routes/contact')
@@ -35,6 +39,7 @@ app.use(express.static(path.join(__dirname, 'node_modules')));
 app.use('/', indexRouter);//home
 app.use('/users', usersRouter);//users
 
+//set routes for 4 pages created
 app.use('/about', aboutRouter);
 app.use('/contact', contactRouter);
 app.use('/services', servicesRouter);

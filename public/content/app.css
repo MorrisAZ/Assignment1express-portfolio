@@ -13,3 +13,7 @@ img {
 	border-radius: 20px;
 	position: static;
 }
+#jumbotron div{
+	background:url(../Assets/images/jumbotronbg.jpg) no-repeat;
+	color: #CCFFFF;
+}

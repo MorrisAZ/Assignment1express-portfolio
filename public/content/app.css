@@ -1,6 +1,6 @@
 /*my custom css goes here*/
 body {
-	background-color: #CCFFFF;
+	background:url(../images/jumbotronbg.jpg) no-repeat;
 }
 td {
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
@@ -12,9 +12,6 @@ img {
 	border: thick outset #CCFF99;
 	border-radius: 20px;
 	position: static;
-	background:url(../Assets/images/jumbotronbg.jpg) no-repeat;
+	
 }
-#jumbotron div{
-	background:url(../Assets/images/jumbotronbg.jpg) no-repeat;
-	color: #CCFFFF;
-}
+

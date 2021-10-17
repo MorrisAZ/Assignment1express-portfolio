@@ -8,14 +8,16 @@ let businessContact = require('../models/businesscontact');
 
 //cerating a get route for business contact page -READ operation
 router.get('/', (req,res,next)=>{
-    businessContact.find((err, businesscontactList)=>{
+    businessContact.find((err, businessContactList)=>{
       if(err)
      {
         return console.error(err);
      }
      else
      {
-      console.log(businesscontactList);  
+      //console.log(businesscontactList);  
+        res.render('businesscontact',{title:'Business Contact List', BusinessContactList: businessContactList})
+
      }
     });
 });

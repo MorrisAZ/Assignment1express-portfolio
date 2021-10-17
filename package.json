@@ -21,6 +21,7 @@
   },
   "description": "assignment 1 express portfolio",
   "main": "index.js",
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MorrisAZ/Assignment1express-portfolio.git"

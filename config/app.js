@@ -17,7 +17,7 @@ let aboutRouter = require('../routes/about')
 let servicesRouter = require('../routes/services')
 let contactRouter = require('../routes/contact')
 let projectsRouter = require('../routes/projects')
-let businessContactsRouter = require('../routes/businessContact')
+let ContactsRouter = require('../routes/contacts')
 
 
 //database setup

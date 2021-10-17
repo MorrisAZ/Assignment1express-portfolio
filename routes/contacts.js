@@ -4,11 +4,11 @@ let mongoose = require('mongoose');
 
 //connect to the businessContact model
 
-let businessContact = require('../models/businesscontact');
+let business_contact = require('../models/contacts');
 
 //cerating a get route for business contact page -READ operation
 router.get('/', (req,res,next)=>{
-    businessContact.find((err, businessContactList)=>{
+    contacts.find((err, contactsList)=>{
       if(err)
      {
         return console.error(err);
@@ -16,7 +16,7 @@ router.get('/', (req,res,next)=>{
      else
      {
       //console.log(businesscontactList);  
-        res.render('businesscontact',{title:'Business Contact List', BusinessContactList: businessContactList})
+        res.render('contacts',{title:'Contacts List', contactsList : contactsList})
 
      }
     });

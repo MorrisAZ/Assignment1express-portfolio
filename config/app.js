@@ -33,18 +33,18 @@ mongoDB.once('open', ()=>{
   console.log('Connected to mongoDB..')
 });
 
-let  app = express();
+let app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, './views'));
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');// express -e
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, './public')));
-app.use(express.static(path.join(__dirname, './node_modules')));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'node_modules')));
 
 //set routes
 app.use('/', indexRouter);//home
@@ -55,7 +55,7 @@ app.use('/about', aboutRouter);
 app.use('/contact', contactRouter);
 app.use('/services', servicesRouter);
 app.use('/projects', projectsRouter);
-app.use('/business-contacts-list',businessContactsRouter);
+app.use('/business-contacts-list',ContactsRouter);
 
 
 

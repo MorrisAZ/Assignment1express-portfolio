@@ -20,11 +20,11 @@
 
                 <!--Repeatable row-->
 
-                <% for (let count = 0; count < contactlist.lerngth; count ++){ %>
+                <% for (let count = 0; count < BcontactList.length; count ++){ %>
                     <tr>
-                        <td class = "text-center"><%= contactsList[count].name %></td>
-                        <td class = "text-center"><%= contactsList[count].phone %></td>
-                        <td class = "text-center"><%= contactsList[count].email %></td>
+                        <td class = "text-center"><%= BcontactList[count].name %></td>
+                        <td class = "text-center"><%= BcontactList[count].phone %></td>
+                        <td class = "text-center"><%= BcontactList[count].email %></td>
                     </tr>
             </table>    
         </div>

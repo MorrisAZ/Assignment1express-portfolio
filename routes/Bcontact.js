@@ -2,21 +2,21 @@ let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
 
-//connect to the businessContact model
+//connect to the Bcontact model
 
-let business_contact = require('../models/contacts');
+let Bcontact = require('../models/Bcontact');
 
 //cerating a get route for business contact page -READ operation
 router.get('/', (req,res,next)=>{
-    contacts.find((err, contactsList)=>{
+    Bcontact.find((err, BcontactList)=>{
       if(err)
      {
         return console.error(err);
      }
      else
      {
-      //console.log(businesscontactList);  
-        res.render('contacts',{title:'Contacts List', contactsList : contactsList})
+      console.log(businesscontactList);  
+        
 
      }
     });
